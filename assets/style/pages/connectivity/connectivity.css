@@ -1,0 +1,73 @@
+.sora-thin {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.connectivity {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+@media (max-width: 576px) {
+  .connectivity {
+    gap: 32px;
+  }
+}
+.connectivity-block {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 576px) {
+  .connectivity-block {
+    flex-direction: column;
+    gap: 0;
+  }
+  .connectivity-block:nth-child(2) img {
+    margin-left: auto;
+  }
+  .connectivity-block:nth-child(2) .connectivity-block-content {
+    text-align: right;
+  }
+}
+.connectivity-block img {
+  width: 120px;
+  height: 120px;
+}
+@media (max-width: 576px) {
+  .connectivity-block img {
+    width: 70px;
+    height: 70px;
+  }
+}
+.connectivity-block-content h3 {
+  font-family: "Sora", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  background: -webkit-linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 576px) {
+  .connectivity-block-content h3 {
+    font-size: 40px;
+  }
+}
+.connectivity-block-content p {
+  font-family: "Sora", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+@media (max-width: 576px) {
+  .connectivity-block-content p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=connectivity.css.map */

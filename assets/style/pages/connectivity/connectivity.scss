@@ -1,0 +1,63 @@
+// Import your mixins
+@import "../../mixins";
+
+.connectivity {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    @include respond-to(sm){
+        gap: 32px;
+    }
+    &-block {
+        display: flex;
+        gap: 30px;
+        @include respond-to(sm){
+            flex-direction: column;
+            gap: 0;
+            &:nth-child(2){
+                img{
+                    margin-left: auto;
+                }
+                .connectivity-block-content{
+                        text-align: right;
+                }
+            }
+        }
+        img{
+            width: 120px;
+            height: 120px;
+            @include respond-to(sm){
+                width: 70px;
+                height: 70px;
+            }
+        }
+        &-content {
+            h3 {
+                font-family: "Sora", sans-serif;
+                font-size: 32px;
+                line-height: 48px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                @include  text-gdOne();
+                @include respond-to(sm){
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                font-family: "Sora", sans-serif;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-bottom: 0;
+                @include respond-to(sm){
+                    font-size: 12px;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,1438 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Sora", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.sora-thin {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.cus-prim-btn {
+  background: linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  padding: 8px 24px !important;
+  border-radius: 5px;
+  font-size: 16px !important;
+  color: white !important;
+}
+.cus-prim-btn:hover {
+  background: linear-gradient(225deg, #3E4EB0 0%, #164E47 100%);
+}
+
+.fixedSm {
+  background: linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  padding: 8px !important;
+  border-radius: 5px;
+  font-size: 12px !important;
+  color: white !important;
+  border-radius: 0px 4px 4px 0px !important;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+}
+.fixedSm:hover {
+  background: linear-gradient(225deg, #3E4EB0 0%, #164E47 100%);
+}
+
+button.cus-gr-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 8px 24px 8px 24px;
+  gap: 5px;
+  border-radius: 4px;
+  position: relative;
+}
+button.cus-gr-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #973A64;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform 300ms ease-in-out;
+}
+button.cus-gr-btn svg {
+  width: 32px;
+  height: 32px;
+}
+button.cus-gr-btn span {
+  font-size: 1.25vw;
+  font-weight: 400;
+  font-family: "Sora";
+  color: white;
+}
+button.cus-gr-btn:hover::after {
+  transform: scaleX(1);
+  transform-origin: 0% -50%;
+}
+@media (max-width: 768px) {
+  button.cus-gr-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+  button.cus-gr-btn span {
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: "Sora";
+    color: white;
+  }
+}
+@media (max-width: 576px) {
+  button.cus-gr-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+  button.cus-gr-btn span {
+    font-size: 3.8541666667vw;
+    font-weight: 400;
+    font-family: "Sora";
+    color: white;
+  }
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 16px !important;
+  height: 16px !important;
+  background: #FFAB00 !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: rgba(255, 171, 0, 0.2509803922) !important;
+  border: 1px solid #FFAB00;
+}
+
+.section-heading h4 {
+  font-size: 1.25vw;
+  font-weight: 400;
+  font-family: "Sora";
+  color: #867C7E;
+}
+.section-heading h2 {
+  font-size: 2.5vw;
+  font-weight: 400;
+  font-family: "Sora";
+  position: relative;
+  color: #867C7E;
+}
+.section-heading h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #973A64;
+  left: 0;
+  bottom: -2px;
+}
+@media (max-width: 576px) {
+  .section-heading h4 {
+    font-size: 3.3333333333vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+  .section-heading h2 {
+    font-size: 5.7291666667vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+}
+@media (max-width: 480px) {
+  .section-heading h4 {
+    font-size: 3.75vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+  .section-heading h2 {
+    font-size: 6.25vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+  .section-heading h2::after {
+    width: 60px;
+  }
+}
+
+.hero {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/bg-video.svg");
+  position: relative;
+  width: 100%;
+  padding-bottom: 43.6875%;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero::before {
+  position: absolute !important;
+  content: "";
+  position: relative;
+  width: 100%;
+  padding-bottom: 14.367816092%;
+  overflow: hidden;
+  top: 0;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.75) 85.09%);
+  z-index: 1;
+}
+.hero::before img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero::after {
+  position: absolute !important;
+  content: "";
+  position: relative;
+  width: 100%;
+  padding-bottom: 14.367816092%;
+  overflow: hidden;
+  transform: scaleY(-1);
+  bottom: 0;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.55) 70.09%);
+  z-index: 1;
+}
+.hero::after img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero-block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.hero-block header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.hero-block header .iffi-logo {
+  width: 125px;
+  height: auto;
+  cursor: pointer;
+}
+.hero-block header .iffi-logo svg {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  overflow: visible;
+}
+.hero-block header .iffi-logo else svg {
+  display: inline-block;
+}
+.hero-block-content {
+  position: absolute;
+  z-index: 2;
+  bottom: 60px;
+}
+.hero-block-content h5 {
+  font-size: 4.6875vw;
+  font-weight: 700;
+  font-family: "Sora";
+  color: white;
+  text-shadow: 0px 12px 8px rgba(0, 0, 0, 0.2509803922);
+}
+.hero-block-content h4 {
+  font-size: 6.25vw;
+  font-weight: 900;
+  font-family: "Sora";
+  color: white;
+  text-shadow: 0px 12px 8px rgba(0, 0, 0, 0.2509803922);
+}
+@media (max-width: 992px) {
+  .hero {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .hero-block-content h5 {
+    line-height: 64px !important;
+    text-shadow: 0px 12px 8px rgba(0, 0, 0, 0.2509803922);
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .hero-block-content h5 {
+    line-height: 48px !important;
+    text-shadow: 0px 12px 8px rgba(0, 0, 0, 0.2509803922);
+  }
+}
+@media (max-width: 576px) {
+  .hero {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  .hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .hero-block header .iffi-logo {
+    width: 75px;
+    height: auto;
+  }
+  .hero-block header .iffi-logo svg {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    overflow: visible;
+  }
+  .hero-block header .iffi-logo else svg {
+    display: inline-block;
+  }
+  .hero-block-content h5 {
+    color: white;
+    font-size: 8.3333333333vw;
+    font-weight: 900;
+    font-family: "Sora";
+  }
+  .hero-block-content h4 {
+    font-size: 8.3333333333vw;
+    font-weight: 900;
+    font-family: "Sora";
+  }
+}
+
+.otherhero {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/bg-another.svg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  padding-bottom: 43.6875%;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.otherhero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.otherhero::before {
+  position: absolute !important;
+  content: "";
+  position: relative;
+  width: 100%;
+  padding-bottom: 14.367816092%;
+  overflow: hidden;
+  top: 0;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.75) 85.09%);
+  z-index: 1;
+}
+.otherhero::before img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.otherhero::after {
+  position: absolute !important;
+  content: "";
+  position: relative;
+  width: 100%;
+  padding-bottom: 14.367816092%;
+  overflow: hidden;
+  transform: scaleY(-1);
+  bottom: 0;
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.55) 70.09%);
+  z-index: 1;
+}
+.otherhero::after img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.otherhero-block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.otherhero-block header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.otherhero-block header .iffi-logo {
+  width: 125px;
+  height: auto;
+  cursor: pointer;
+}
+.otherhero-block header .iffi-logo svg {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  overflow: visible;
+}
+.otherhero-block header .iffi-logo else svg {
+  display: inline-block;
+}
+.otherhero-block-content {
+  position: absolute;
+  z-index: 2;
+  bottom: 40%;
+}
+.otherhero-block-content h5 {
+  font-size: 4.6875vw;
+  font-weight: 700;
+  font-family: "Sora";
+  color: white;
+  text-shadow: 0px 12px 8px rgba(0, 0, 0, 0.2509803922);
+}
+.otherhero-block-content h4 {
+  font-size: 8.3333333333vw;
+  font-weight: 900;
+  font-family: "Sora";
+  color: white;
+  text-shadow: 0px 12px 8px rgba(0, 0, 0, 0.2509803922);
+}
+@media (max-width: 992px) {
+  .otherhero {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  .otherhero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .otherhero-block-content h5 {
+    line-height: 64px !important;
+    text-shadow: 0px 12px 8px rgba(0, 0, 0, 0.2509803922);
+  }
+}
+@media (max-width: 768px) {
+  .otherhero {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  .otherhero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .otherhero-block-content h5 {
+    line-height: 48px !important;
+    text-shadow: 0px 12px 8px rgba(0, 0, 0, 0.2509803922);
+  }
+}
+@media (max-width: 576px) {
+  .otherhero {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+  }
+  .otherhero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .otherhero-block header .iffi-logo {
+    width: 75px;
+    height: auto;
+  }
+  .otherhero-block header .iffi-logo svg {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    overflow: visible;
+  }
+  .otherhero-block header .iffi-logo else svg {
+    display: inline-block;
+  }
+  .otherhero-block-content h5 {
+    color: white;
+    font-size: 8.3333333333vw;
+    font-weight: 900;
+    font-family: "Sora";
+  }
+  .otherhero-block-content h4 {
+    font-size: 14.333333vw;
+  }
+}
+
+.whatNew {
+  padding: 60px 0;
+  text-align: center;
+}
+.whatNew svg {
+  width: 434px;
+  height: auto;
+}
+.whatNew svg svg {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  overflow: visible;
+}
+.whatNew svg else svg {
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .whatNew svg {
+    width: 380px;
+    height: auto;
+  }
+  .whatNew svg svg {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    overflow: visible;
+  }
+  .whatNew svg else svg {
+    display: inline-block;
+  }
+}
+@media (max-width: 576px) {
+  .whatNew svg {
+    width: 280px;
+    height: auto;
+  }
+  .whatNew svg svg {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    overflow: visible;
+  }
+  .whatNew svg else svg {
+    display: inline-block;
+  }
+}
+.whatNew h5 {
+  color: #615A5B;
+  font-size: 1.6666666667vw;
+  font-weight: 400;
+  font-family: "Sora";
+}
+@media (max-width: 992px) {
+  .whatNew h5 {
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+}
+@media (max-width: 768px) {
+  .whatNew h5 {
+    font-size: 3.3333333333vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+}
+@media (max-width: 576px) {
+  .whatNew h5 {
+    font-size: 3.6458333333vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+}
+.whatNew-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .whatNew-item {
+    justify-content: center;
+  }
+}
+.whatNew-item section {
+  display: flex;
+  align-items: center;
+}
+.whatNew-item section svg {
+  width: 60px;
+  height: 60px;
+}
+.whatNew-item section p {
+  font-size: 0.9375vw;
+  font-weight: 400;
+  font-family: "Sora";
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .whatNew-item section p {
+    font-size: 1.6666666667vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+}
+@media (max-width: 576px) {
+  .whatNew-item section p {
+    font-size: 3.3333333333vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+}
+
+.highlights .owl-carousel .owl-nav.disabled {
+  display: flex !important;
+}
+.highlights .owl-nav {
+  position: absolute;
+  top: -32px;
+  right: 0;
+  display: flex;
+  gap: 10px;
+}
+.highlights .owl-nav button.owl-next {
+  width: 24px;
+  height: 24px;
+  background: url(../images/arrow-right-svgrepo.svg) !important;
+}
+.highlights .owl-nav button.owl-next span {
+  display: none;
+}
+.highlights .owl-nav button.owl-prev {
+  width: 24px;
+  height: 24px;
+  transform: rotate(180deg);
+  background: url(../images/arrow-right-svgrepo.svg) !important;
+}
+.highlights .owl-nav button.owl-prev span {
+  display: none;
+}
+.highlights .owl-nav .owl-prev.disabled,
+.highlights .owl-nav .owl-next.disabled {
+  opacity: 0.7;
+}
+.highlights .card {
+  box-shadow: 0px 4px 4px 0px #A9A3A4, 0px 0px 4px 0px #A9A3A4;
+  border-radius: 12px;
+}
+.highlights .card img {
+  position: relative;
+  width: 100%;
+  padding-bottom: 103.0927835052%;
+  overflow: hidden;
+  padding: 0;
+}
+.highlights .card img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.screening {
+  padding: 6rem 0;
+}
+@media (max-width: 1200px) {
+  .screening {
+    max-width: 100% !important;
+  }
+}
+.screening-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+@media (max-width: 1200px) {
+  .screening-box {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 992px) {
+  .screening-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.screening-box h4 {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  padding: 26px 0;
+  width: calc(100% - 185px);
+  margin-left: auto;
+  color: #867C7E;
+}
+@media (max-width: 1200px) {
+  .screening-box h4 {
+    width: calc(100% - 165px);
+  }
+}
+@media (max-width: 992px) {
+  .screening-box h4 {
+    width: calc(100% - 185px);
+  }
+}
+@media (max-width: 480px) {
+  .screening-box h4 {
+    width: calc(100% - 165px);
+  }
+}
+.screening-box img {
+  width: 163px;
+  height: 225px;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 1200px) {
+  .screening-box img {
+    width: 145px;
+    height: 200px;
+  }
+}
+@media (max-width: 992px) {
+  .screening-box img {
+    width: 163px;
+    height: 225px;
+  }
+}
+@media (max-width: 480px) {
+  .screening-box img {
+    width: 145px;
+    height: 200px;
+  }
+}
+.screening-box-card {
+  max-width: 320px;
+}
+@media (max-width: 1200px) {
+  .screening-box-card {
+    max-width: 275px;
+  }
+}
+@media (max-width: 992px) {
+  .screening-box-card {
+    max-width: 320px;
+  }
+}
+.screening-box-card-block {
+  background: linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+}
+.screening-box-card-block-heading {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  gap: 10px;
+  width: calc(100% - 185px);
+  padding-right: 15px !important;
+  margin-left: auto;
+  padding: 27px 0;
+  color: white;
+}
+@media (max-width: 1200px) {
+  .screening-box-card-block-heading {
+    width: calc(100% - 165px);
+  }
+}
+@media (max-width: 992px) {
+  .screening-box-card-block-heading {
+    width: calc(100% - 185px);
+  }
+}
+@media (max-width: 480px) {
+  .screening-box-card-block-heading {
+    width: calc(100% - 165px);
+    font-size: 11px;
+  }
+}
+.screening-box-card-block-heading span:nth-child(2) {
+  text-decoration: underline;
+  color: #F1F0F1;
+  font-weight: 300;
+}
+.screening-box-card-block ul {
+  padding: 15px 30px;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  color: white;
+}
+@media (max-width: 480px) {
+  .screening-box-card-block ul {
+    padding-top: 8px !important;
+  }
+}
+
+.newsUpdates-item {
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.newsUpdates-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.newsUpdates-item p {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(89.64deg, rgba(0, 0, 0, 0) 0.21%, rgba(0, 0, 0, 0.5) 99.59%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 15px 10px 25px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  color: white;
+}
+@media (max-width: 480px) {
+  .newsUpdates-item p {
+    font-size: 14px;
+  }
+}
+
+.emptybox {
+  background: rgba(0, 0, 0, 0.7490196078);
+  padding: 60px 0;
+}
+.socialMedia {
+  padding-bottom: 48px;
+  padding-top: 48px;
+}
+.socialMedia main {
+  display: flex;
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .socialMedia main {
+    flex-direction: column;
+  }
+}
+.socialMedia main section:nth-child(1) {
+  width: 60%;
+  height: 460px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .socialMedia main section:nth-child(1) {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .socialMedia main section:nth-child(1) {
+    height: 250px;
+  }
+}
+.socialMedia main section:nth-child(1) img {
+  box-shadow: 0px 4px 4px 0px #A9A3A4, 0px 0px 4px 0px #A9A3A4;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 4px;
+}
+.socialMedia main section:nth-child(1) .bg-grad {
+  position: absolute;
+  background: linear-gradient(329.47deg, rgba(255, 255, 255, 0) 25.67%, #FFFFFF 99.33%);
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.socialMedia main section:nth-child(1) .bg-grad img {
+  width: 75px;
+  height: 75px;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 18px 50px;
+}
+@media (max-width: 576px) {
+  .socialMedia main section:nth-child(1) .bg-grad img {
+    width: 50px;
+    height: 50px;
+    margin: 18px;
+  }
+}
+.socialMedia main section:nth-child(2) {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+@media (max-width: 1200px) {
+  .socialMedia main section:nth-child(2) {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .socialMedia main section:nth-child(2) {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .socialMedia main section:nth-child(2) {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 576px) {
+  .socialMedia main section:nth-child(2) {
+    gap: 15px;
+  }
+}
+.socialMedia main section:nth-child(2) .social-card {
+  position: relative;
+  width: 125px;
+}
+@media (max-width: 1200px) {
+  .socialMedia main section:nth-child(2) .social-card {
+    height: 200px;
+  }
+}
+@media (max-width: 576px) {
+  .socialMedia main section:nth-child(2) .social-card {
+    width: 47%;
+  }
+}
+.socialMedia main section:nth-child(2) .social-card img {
+  box-shadow: 0px 4px 4px 0px #A9A3A4, 0px 0px 4px 0px #A9A3A4;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 4px;
+}
+.socialMedia main section:nth-child(2) .social-card .bg-grad {
+  position: absolute;
+  background: linear-gradient(329.47deg, rgba(255, 255, 255, 0) 25.67%, #FFFFFF 99.33%);
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.socialMedia main section:nth-child(2) .social-card .bg-grad img {
+  width: 24px;
+  height: 24px;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 8px;
+}
+
+.interComp {
+  padding: 48px 0;
+}
+.interComp .interComp-heading {
+  font-size: 14px;
+  font-weight: 400;
+  color: #867C7E;
+  margin-bottom: 15px;
+}
+@media (max-width: 992px) {
+  .interComp .interComp-mb {
+    margin-bottom: 42px;
+  }
+}
+.interComp main .feature-film {
+  position: relative;
+}
+.interComp main .feature-film img {
+  width: 100%;
+}
+.interComp main .feature-film p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  color: white;
+  padding: 8px 15px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(89.64deg, rgba(0, 0, 0, 0) 0.21%, rgba(0, 0, 0, 0.5) 99.59%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+@media (max-width: 480px) {
+  .interComp main .feature-film p {
+    font-size: 20px;
+  }
+}
+.interComp main #owl-four {
+  height: calc(100% - 30.79px);
+}
+.interComp main #owl-four .owl-stage-outer {
+  height: 100%;
+}
+.interComp main #owl-four .owl-stage-outer .owl-stage {
+  height: 100%;
+}
+.interComp main #owl-four .owl-stage-outer .owl-stage .owl-item {
+  height: 100%;
+}
+.interComp main #owl-four .owl-stage-outer .owl-stage .owl-item .mayLike {
+  height: 100%;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .interComp main #owl-four .owl-stage-outer .owl-stage .owl-item .mayLike {
+    min-height: 200px;
+  }
+}
+.interComp main #owl-four .owl-stage-outer .owl-stage .owl-item .mayLike img {
+  height: 100%;
+}
+.interComp main #owl-four .owl-stage-outer .owl-stage .owl-item .mayLike p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  color: white;
+  padding: 8px 15px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(89.64deg, rgba(0, 0, 0, 0) 0.21%, rgba(0, 0, 0, 0.5) 99.59%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+@media (max-width: 480px) {
+  .interComp main #owl-four .owl-stage-outer .owl-stage .owl-item .mayLike p {
+    font-size: 12px;
+  }
+}
+.interComp main .interComp-sectionTwo {
+  height: 100%;
+}
+.interComp main .interComp-btn {
+  margin-top: 42px;
+}
+@media (max-width: 992px) {
+  .interComp main .interComp-btn {
+    margin-top: 64px;
+  }
+}
+
+.director {
+  padding: 48px 0;
+}
+.director-item {
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #615A5B;
+}
+.director-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.director-item p {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(89.64deg, rgba(0, 0, 0, 0) 0.21%, rgba(0, 0, 0, 0.5) 99.59%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 15px 10px 25px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.director-item p span:nth-child(1) {
+  font-size: 20px;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+.director-item p span:nth-child(2) {
+  font-size: 12px;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+@media (max-width: 480px) {
+  .director-item p {
+    font-size: 14px;
+  }
+}
+
+.indianPanorama {
+  padding: 48px 0;
+  background-image: url("/assets/images/indianPanorma.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.indianPanorama-item {
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #615A5B;
+}
+.indianPanorama-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.indianPanorama-item p {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(89.64deg, rgba(0, 0, 0, 0) 0.21%, rgba(0, 0, 0, 0.5) 99.59%), linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 15px 10px 25px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.indianPanorama-item p span:nth-child(1) {
+  font-size: 20px;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+.indianPanorama-item p span:nth-child(2) {
+  font-size: 12px;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  color: white;
+}
+@media (max-width: 480px) {
+  .indianPanorama-item p {
+    font-size: 14px;
+  }
+}
+
+.spnonser {
+  padding: 48px 0;
+}
+.spnonser .section-heading h4 {
+  font-size: 1.25vw;
+  font-weight: 400;
+  font-family: "Sora";
+  color: #867C7E;
+}
+.spnonser .section-heading h2 {
+  font-size: 2.5vw;
+  font-weight: 400;
+  font-family: "Sora";
+  position: relative;
+  color: #867C7E;
+}
+.spnonser .section-heading h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #973A64;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: -2px;
+}
+@media (max-width: 1200px) {
+  .spnonser .section-heading {
+    text-align: center;
+  }
+  .spnonser .section-heading h2::after {
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+@media (max-width: 576px) {
+  .spnonser .section-heading h4 {
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+  .spnonser .section-heading h2 {
+    font-size: 5vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+}
+@media (max-width: 480px) {
+  .spnonser .section-heading h4 {
+    font-size: 3.75vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+  .spnonser .section-heading h2 {
+    font-size: 6.25vw;
+    font-weight: 400;
+    font-family: "Sora";
+  }
+  .spnonser .section-heading h2::after {
+    width: 60px;
+  }
+}
+.spnonser-logo {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.spnonser-logo img {
+  width: 137px;
+  height: 92px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.spnonser-btn {
+  margin-top: 60px;
+}
+
+footer {
+  background: linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  padding: 32px 0;
+  position: relative;
+  overflow: hidden;
+}
+footer::before {
+  position: absolute;
+  content: "";
+  background-image: url(/assets/images/peacockiffi.png);
+  width: 99%;
+  height: 100%;
+  top: 0;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+@media (max-width: 992px) {
+  footer::before {
+    background-size: 50%;
+    opacity: 0.4;
+  }
+}
+footer .f-logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+footer .f-logo div {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  footer .f-logo div {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+footer .f-logo div img {
+  width: 210px;
+  height: 110px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+@media (max-width: 992px) {
+  footer .f-logo div img {
+    width: 160px;
+    height: 60px;
+  }
+}
+@media (max-width: 576px) {
+  footer .f-logo div img {
+    width: 125px;
+    height: 60px;
+  }
+}
+footer .f-link-box {
+  margin-top: 60px;
+}
+footer .f-link-box .f-link h4 {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Sora", sans-serif;
+  color: #F1F0F1;
+  margin-bottom: 18px;
+}
+footer .f-link-box .f-link a {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Sora", sans-serif;
+  color: #C1BCBB;
+  text-decoration: none;
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+footer .f-link-box .f-link a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #973A64;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 100% 50%;
+  transition: transform 300ms ease-in-out;
+}
+footer .f-link-box .f-link a:hover::after {
+  transform: scaleX(1);
+  transform-origin: 0% -50%;
+}
+footer .f-foot {
+  position: relative;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+@media (max-width: 576px) {
+  footer .f-foot {
+    margin-top: 150px;
+  }
+}
+footer .f-foot .social-bar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 16px;
+}
+footer .f-foot .social-bar img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+footer .f-foot-copyright {
+  color: white;
+}
+footer .f-foot-copyright p {
+  font-size: 12px;
+  font-weight: 200;
+  font-family: "Sora", sans-serif;
+}
+footer .f-foot-copyright a {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
