@@ -11,18 +11,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <style>
-        .item {
-            text-align: center;
-            padding: 20px;
-            background: #4a90e2;
-            color: #fff;
-            border-radius: 10px;
-        }
-    </style>
 </head>
 
 <body>
+    <div class="menuShow" id="mySidenav">
+        <div class="cus-menuP">
+            <div class="container">
+                <div class="d-flex justify-content-end mb-3">
+                    <button class="p-0 btn" onclick="closeNav()">
+                        <svg id="" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="3.35355" y1="2.64645" x2="21.0312" y2="20.3241" stroke="#FAEEF2" />
+                            <line y1="-0.5" x2="25" y2="-0.5"
+                                transform="matrix(0.707107 -0.707107 -0.707107 -0.707107 3 20.6777)" stroke="#FAEEF2" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 mb-3">
+                        <div class="d-flex flex-column gap-5">
+                            <p class="mb-0 cus-menuP-title">About us</p>
+                            <div class="d-flex flex-column gap-3">
+                                <a href="/aboutUs.html" class="cus-menuP-link">About IFFI</a>
+                                <a href="#" class="cus-menuP-link">Glimpses of IFFI 2023</a>
+                                <a href="#" class="cus-menuP-link">Festival Venue</a>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                About Goa
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body px-0">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="#" class="cus-menuP-link">Goa Tourist Places</a>
+                                                    <a href="/connectivity.html" class="cus-menuP-link">Connectivity</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 mb-3">
+                        <div class="d-flex flex-column gap-5">
+                            <p class="mb-0 cus-menuP-title">Film selection</p>
+                            <div class="d-flex flex-column gap-3">
+                                <a href="#" class="cus-menuP-link">About IFFI</a>
+                                <a href="#" class="cus-menuP-link">Glimpses of IFFI 2023</a>
+                                <a href="#" class="cus-menuP-link">Festival Venue</a>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                About Goa
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body px-0">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <a href="#" class="cus-menuP-link">Glimpses of IFFI 2023</a>
+                                                    <a href="#" class="cus-menuP-link">Festival Venue</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <button class="btn fixedSm">Ticket Booking</button>
     <section class="hero px-0">
         <div class="hero-block">
@@ -34,7 +102,7 @@
                             fill="white" />
                     </svg>
                 </div>
-                <button class="btn cus-gr-btn">
+                <button class="btn cus-gr-btn"  onclick="openNav()">
                     <svg viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M3.63672 5.42014C3.63672 4.71133 4.21133 4.13672 4.92014 4.13672H9.62602C10.3348 4.13672 10.9094 4.71133 10.9094 5.42014V10.126C10.9094 10.8348 10.3348 11.4094 9.62602 11.4094H4.92014C4.21133 11.4094 3.63672 10.8348 3.63672 10.126V5.42014Z"
@@ -196,7 +264,7 @@
             <h2>Screenings!</h2>
         </div>
         <main class="container-fluid">
-            <div class="screening-box container">
+            <div class="screening-box container px-0">
                 <div class="screening-box-card position-relative">
                     <h4>Opening Fest</h4>
                     <img src="./assets/images/Screening-One.svg" alt="">
@@ -335,7 +403,7 @@
         </div>
         <main class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 interComp-mb">
+                <div class="col-lg-5 col-md-12 col-sm-12 interComp-mb">
                     <section>
                         <h6 class="interComp-heading">Feature Film</h6>
                         <div class="feature-film">
@@ -344,21 +412,21 @@
                         </div>
                     </section>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-lg-7 col-md-12 col-sm-12">
                     <section class="interComp-sectionTwo">
                         <h6 class="interComp-heading">You May Also Like</h6>
                         <div id="owl-four" class="owl-carousel owl-theme">
                             <div class=" mayLike">
                                 <img src="/assets/images/partyfool.png" alt="">
-                                <p class="mb-0">Party With Fools</p>
+                                <p class="mb-0 text-start">Party With Fools</p>
                             </div>
                             <div class="mayLike">
                                 <img src="/assets/images/partyfool.png" alt="">
-                                <p class="mb-0">Party With Fools</p>
+                                <p class="mb-0 text-start">Party With Fools</p>
                             </div>
                             <div class="mayLike">
                                 <img src="/assets/images/partyfool.png" alt="">
-                                <p class="mb-0">Party With Fools</p>
+                                <p class="mb-0 text-start">Party With Fools</p>
                             </div>
                         </div>
 
@@ -484,7 +552,46 @@
         </div>
         <div class="w-100 text-center mt-4"><button class="btn cus-prim-btn">View More</button></div>
     </section>
+    <section class="trailer">
+        <div class="section-heading mb-4 container">
+            <h4>Embrace creativity, inspire change, and shine in the</h4>
+            <h2>International competition</h2>
+        </div>
+        <main class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 trailer-mb">
+                    <section>
+                        <h6 class="trailer-heading">Feature Film</h6>
+                        <div class="feature-film">
+                            <img src="/assets/images/partyfool.png" alt="">
+                            <p class="mb-0">Party With Fools</p>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <section class="trailer-sectionTwo">
+                        <h6 class="trailer-heading">You May Also Like</h6>
+                        <div id="owl-seven" class="owl-carousel owl-theme">
+                            <div class=" mayLike">
+                                <img src="/assets/images/partyfool.png" alt="">
+                                <p class="mb-0">Party With Fools</p>
+                            </div>
+                            <div class="mayLike">
+                                <img src="/assets/images/partyfool.png" alt="">
+                                <p class="mb-0">Party With Fools</p>
+                            </div>
+                            <div class="mayLike">
+                                <img src="/assets/images/partyfool.png" alt="">
+                                <p class="mb-0">Party With Fools</p>
+                            </div>
+                        </div>
 
+                    </section>
+                </div>
+            </div>
+            <div class="w-100 text-center trailer-btn"><button class="btn cus-prim-btn">View More</button></div>
+        </main>
+    </section>
     <section class="spnonser">
         <div class="section-heading text-center mb-4 container">
             <h4>Fuelling Success Together</h4>
@@ -576,6 +683,16 @@
     </footer>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS bundle including Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+roopTFeHpPcJ7LFyz6u5ffEzPpPo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
@@ -650,7 +767,7 @@
         $(document).ready(function () {
             $('#owl-four').owlCarousel({
                 loop: true,
-                margin: 30,
+                margin: 15,
                 nav: false,
                 dots: true,
                 responsive: {
@@ -732,6 +849,45 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            $('#owl-seven').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        margin: 15,
+
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1200: {
+                        items: 2
+                    },
+                    1440: {
+                        items: 2
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.height = "100%";
+          document.getElementById("mySidenav").style.zIndex = "99";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.height = "0";
+          document.getElementById("mySidenav").style.zIndex = "0";
+
+        }
+        </script>
+    
 </body>
 
 </html>
