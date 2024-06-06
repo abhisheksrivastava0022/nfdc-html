@@ -25,20 +25,100 @@ html {
 
 
 
-
-
-.db-credM{
-width: 100%;
-height: 100%;
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-section{
-    &:nth-child(1){
-
-    }
-    &:nth-child(2){
-        
-    }
+.btn-sm {
+    padding: 0;
+    font-size: 16px !important;
+    font-family: "Sora", sans-serif;
 }
+
+.db-credM {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+
+    section {
+        width: 50%;
+
+        &:nth-child(1) {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            @include respond-to(md){
+                display: none;
+            }
+        }
+
+        &:nth-child(2) {
+            @include respond-to(md){
+                display: block;
+                width: 100%;
+            }
+            background-image: url(/assets/images/footer-iillustart.svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100%;
+            position: relative;
+            z-index: 1;
+            padding: 15px;
+
+            .db-route {
+                padding: 48px 0 0;
+                &-profile {
+                    overflow-x: hidden;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    z-index: 2;
+                    gap: 8px;
+                    svg{
+                        margin: 0 auto 24px;
+                    }
+                    &-readtxt {
+                        span {
+                            &:nth-child(1) {
+                                font-size: 18px;
+                                font-family: "Sora", sans-serif;
+                                font-weight: 400;
+                                color: $grey-600;
+                                @include respond-to(sm){
+                                    font-size: 14px;
+                                }
+                            }
+
+                            &:nth-child(2) {
+                                font-size: 24px;
+                                font-family: "Sora", sans-serif;
+                                font-weight: 400;
+                                @include text-gdOne;
+                                width: 100%;
+                                display: inline;
+                                text-wrap: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                @include respond-to(sm){
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-image: url(/assets/images/old-camera.svg);
+                background-repeat: no-repeat;
+                background-size: 30%;
+                left: 50%;
+                transform: translate(-20%, 0%);
+            }
+        }
+    }
 }
