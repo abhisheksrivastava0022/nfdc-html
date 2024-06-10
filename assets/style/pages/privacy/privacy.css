@@ -1,0 +1,39 @@
+.sora-thin {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.privacy {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.privacy main:first-child p {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+}
+.privacy main h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+}
+.privacy main li::marker {
+  font-size: 1.5rem;
+  /* Adjust the size as needed */
+  color: #615A5B;
+}
+.privacy main p {
+  font-size: 1.3rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+}
+.privacy .last-content p {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Sora", sans-serif;
+}/*# sourceMappingURL=privacy.css.map */

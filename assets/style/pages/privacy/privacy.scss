@@ -1,0 +1,47 @@
+@import "../../mixins";
+
+.privacy {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+
+    main {
+        &:first-child {
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: "Sora", sans-serif;
+
+            }
+        }
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 400;
+            font-family: "Sora", sans-serif;
+
+        }
+
+        li::marker {
+            font-size: 1.5rem;
+            /* Adjust the size as needed */
+            color: $grey-500;
+        }
+
+        p {
+            font-size: 1.3rem;
+            font-family: "Sora", sans-serif;
+            font-weight: 400;
+        }
+    }
+
+    .last-content {
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: "Sora", sans-serif;
+        }
+    }
+}
