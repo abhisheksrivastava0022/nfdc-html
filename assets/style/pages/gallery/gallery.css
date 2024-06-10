@@ -1,0 +1,29 @@
+.sora-thin {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.gallery {
+  padding: 48px 0;
+}
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  grid-auto-rows: auto;
+  grid-gap: 15px;
+}
+.gallery .grid-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.gallery .grid-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+.gallery .grid-item:hover img {
+  transform: scale(1.1);
+}/*# sourceMappingURL=gallery.css.map */
