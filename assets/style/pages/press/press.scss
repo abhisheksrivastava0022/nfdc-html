@@ -1,0 +1,9 @@
+@import "../../mixins";
+
+
+.press{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+}

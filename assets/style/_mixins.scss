@@ -1,6 +1,6 @@
 // Mixin to convert px to vw and include font weight and font family
 // _mixins.scss
-
+@import '~mdb-ui-kit/css/mdb.min.css';
 @mixin font-style($sizeValue, $fontWeight: normal, $fontFamily: 'Sora', $viewportWidth: 1920px) {
   font-size: ($sizeValue / $viewportWidth) * 100vw;
   font-weight: $fontWeight;
