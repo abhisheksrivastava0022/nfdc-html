@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <style>
-        .item {
-            text-align: center;
-            padding: 20px;
-            background: #4a90e2;
-            color: #fff;
-            border-radius: 10px;
-        }
-    </style>
+
+
+    <!-- MDBootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet">
+    <!-- Material UI CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/@material-ui/core@latest/dist/material-ui.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -100,6 +101,50 @@
                 <h2>Festival</h2>
                 <h4>Programmes In Brief</h4>
             </div>
+            <div class="about-festival-accordian">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
+                                data-mdb-toggle="collapse" data-mdb-target="#panelsStayOpen-collapseTwo"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                International Competition
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="headingTwo">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                our default variables. It's also worth noting that just about any HTML can go within
+                                the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button data-mdb-collapse-init class="accordion-button collapsed" type="button"
+                                data-mdb-toggle="collapse" data-mdb-target="#panelsStayOpen-collapseThree"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="headingThree">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and
+                                hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                our default variables. It's also worth noting that just about any HTML can go within
+                                the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <ul class="about-festival-ul">
                 <li>Gala Opening and Closing Ceremonies and daily Red Carpet events & celebrations</li>
                 <li>Country Focus, Tributes, Retrospectives, Goan Films’ Section & other specially curated packages of
@@ -141,19 +186,22 @@
                         </div>
                         <div class="up-awards-card">
                             <h5 class="d-flex flex-column"><span>Best Debut Feature</span>
-                            <span>Film of a Director</span></h5>
+                                <span>Film of a Director</span>
+                            </h5>
                             <p>Certificate and a Cash prize of <span>Rs. 40,00,000/-</span></p>
                         </div>
                     </div>
                 </div>
                 <div class="about-awards-block-card">
-                    <h3><span>Satyajit Ray  </span>Lifetime Achievement Award</h3>
+                    <h3><span>Satyajit Ray </span>Lifetime Achievement Award</h3>
                     <div class="up-awards-card">
-                        <p>This prestigious award is conferred upon master film personalities for outstanding contribution to cinema. Latest recipients were Carlos Saura (2022) , Martin Scorsese (2021) Istvan Szabo (2021) and Vittorio Storato (2020).</p>
+                        <p>This prestigious award is conferred upon master film personalities for outstanding
+                            contribution to cinema. Latest recipients were Carlos Saura (2022) , Martin Scorsese (2021)
+                            Istvan Szabo (2021) and Vittorio Storato (2020).</p>
                     </div>
                 </div>
                 <div class="about-awards-block-card">
-                    <h3><span>Indian Film  </span>Personality of the Year</h3>
+                    <h3><span>Indian Film </span>Personality of the Year</h3>
                     <div class="up-awards-card">
                         <p>Previous recipients were Chiranjeevi (2022), Hema Malini (2021) and Prasoon Joshi (2021).</p>
                     </div>
@@ -239,6 +287,16 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- MDBootstrap JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+    <!-- DataTables JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <!-- Material UI JavaScript -->
+    <script src="https://unpkg.com/@material-ui/core@latest/dist/material-ui.js"></script>
+    <!-- Initialize DataTables -->
 </body>
 
 </html>

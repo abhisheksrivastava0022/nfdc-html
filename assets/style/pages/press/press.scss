@@ -1,9 +1,44 @@
 @import "../../mixins";
 
 
-.press{
+.press {
     padding-top: 48px;
     padding-bottom: 48px;
     display: flex;
     flex-direction: column;
+
+    .dataTables_wrapper .dataTables_length,
+    .dataTables_wrapper .dataTables_filter {
+        margin-bottom: 1rem;
+    }
+
+    .dataTables_wrapper .dataTables_paginate {
+        margin-top: 1rem;
+    }
+
+    .dataTables_info {
+        font-size: 14px;
+        font-family: "Sora", sans-serif;
+
+    }
+
+    .page-link {
+        font-size: 14px;
+        font-family: "Sora", sans-serif;
+
+    }
+
+    thead {
+        font-size: 14px;
+        font-family: "Sora", sans-serif;
+
+    }
+    .dataTables_length{
+        label{
+            font-size: 12px;
+            font-family: "Sora", sans-serif;
+        }
+    }
+
+
 }

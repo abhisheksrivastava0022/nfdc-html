@@ -11,4 +11,27 @@
   padding-bottom: 48px;
   display: flex;
   flex-direction: column;
+}
+.press .dataTables_wrapper .dataTables_length,
+.press .dataTables_wrapper .dataTables_filter {
+  margin-bottom: 1rem;
+}
+.press .dataTables_wrapper .dataTables_paginate {
+  margin-top: 1rem;
+}
+.press .dataTables_info {
+  font-size: 14px;
+  font-family: "Sora", sans-serif;
+}
+.press .page-link {
+  font-size: 14px;
+  font-family: "Sora", sans-serif;
+}
+.press thead {
+  font-size: 14px;
+  font-family: "Sora", sans-serif;
+}
+.press .dataTables_length label {
+  font-size: 12px;
+  font-family: "Sora", sans-serif;
 }/*# sourceMappingURL=press.css.map */
