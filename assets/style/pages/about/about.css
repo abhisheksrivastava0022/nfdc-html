@@ -166,4 +166,30 @@
   background: -webkit-linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.about .accordion {
+  display: flex !important;
+  flex-direction: column;
+  gap: 24px;
+}
+.about .accordion button.accordion-button {
+  font-size: 16px;
+  padding: 24px 20px;
+  background: linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  color: white;
+}
+.about .accordion .accordion-button:not(.collapsed):after {
+  background-image: url(/assets/images/chevron_down_small.svg);
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+}
+.about .accordion .accordion-button:after {
+  background-image: url(/assets/images/chevron_down_small.svg);
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+}
+.about .accordion .accordion-body {
+  font-size: 14px;
 }/*# sourceMappingURL=about.css.map */

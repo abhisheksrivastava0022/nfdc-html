@@ -180,4 +180,31 @@
             }
         }
     }
+        .accordion{
+            display: flex !important;
+            flex-direction: column;
+            gap: 24px;
+            button.accordion-button {
+                font-size: 16px;
+                padding: 24px 20px;
+                background: $gradientOne;
+                color: white;
+                
+            }
+            .accordion-button:not(.collapsed):after{
+                background-image: url(/assets/images/chevron_down_small.svg);
+                width: 24px;
+                height: 24px;
+                background-size: 100%;
+            }
+            .accordion-button:after{
+                background-image: url(/assets/images/chevron_down_small.svg);
+                width: 24px;
+                height: 24px;
+                background-size: 100%;
+            }
+            .accordion-body{
+                font-size: 14px;
+            }
+        }
 }

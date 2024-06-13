@@ -1,0 +1,38 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+.sora-thin {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.faq {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.faq-accordian .accordion {
+  display: flex !important;
+  flex-direction: column;
+  gap: 24px;
+}
+.faq-accordian .accordion button.accordion-button {
+  font-size: 16px;
+  padding: 24px 20px;
+  background: linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  color: white;
+}
+.faq-accordian .accordion .accordion-button:not(.collapsed):after {
+  background-image: url(/assets/images/chevron_down_small.svg);
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+}
+.faq-accordian .accordion .accordion-button:after {
+  background-image: url(/assets/images/chevron_down_small.svg);
+  width: 24px;
+  height: 24px;
+  background-size: 100%;
+}
+.faq-accordian .accordion .accordion-body {
+  font-size: 14px;
+}/*# sourceMappingURL=faq.css.map */
