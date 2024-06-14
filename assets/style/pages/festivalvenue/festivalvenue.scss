@@ -1,0 +1,41 @@
+@import "../../mixins";
+
+.festivalVen {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    h3 {
+        font-family: "Sora", sans-serif;
+    }
+
+    .card-text {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-family: "Sora", sans-serif;
+
+        span {
+            display: block;
+            width: 32px;
+            height: 32px;
+            background: $gradientOne;
+            padding: 6px;
+            border-radius: 50%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        a {
+            font-size: 14px;
+            text-decoration: none;
+            color: $grey-500;
+            font-family: "Sora", sans-serif;
+
+            &:hover {
+                @include text-gdOne;
+            }
+        }
+    }
+}
