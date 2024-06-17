@@ -1,0 +1,28 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '~mdb-ui-kit/css/mdb.min.css';
+.sora-thin {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ticketpolicy {
+  padding: 48px 0;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+.ticketpolicy ul {
+  list-style: none;
+}
+.ticketpolicy .pl-lg-5 {
+  padding-left: 5rem;
+  width: 100%;
+  display: block;
+}
+@media (max-width: 576px) {
+  .ticketpolicy .pl-lg-5 {
+    padding-left: 2rem;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=ticketpolicy.css.map */

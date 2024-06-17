@@ -1,0 +1,21 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '../../mixins';
+
+
+.ticketpolicy{
+    padding: 48px 0;
+    font-size: 1.6rem;
+    text-align: justify;
+    ul{
+        list-style: none;
+    }
+    .pl-lg-5{
+        padding-left: 5rem;
+        width: 100%;
+        display: block;
+        @include respond-to(sm){
+            padding-left: 2rem;
+            font-size: 14px;
+        }
+    }
+}

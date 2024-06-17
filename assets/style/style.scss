@@ -381,11 +381,11 @@ button.cus-gr-btn {
         &-content {
             position: absolute;
             z-index: 2;
-            bottom: 40%;
+            bottom: 35%;
 
 
             @include respond-to(xxl) {
-                bottom: 220px;
+                bottom: 200px;
             }
 
             @include respond-to(xl) {
@@ -404,6 +404,11 @@ button.cus-gr-btn {
 
             h4 {
                 @include font-style(160px, 900); // Use numeric value for font-weight
+                color: white;
+                text-shadow: 0px 12px 8px #00000040;
+            }
+            h3{
+                @include font-style(130px, 700); // Use numeric value for font-weight
                 color: white;
                 text-shadow: 0px 12px 8px #00000040;
             }

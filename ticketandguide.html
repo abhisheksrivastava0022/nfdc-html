@@ -5,22 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IffIgoa</title>
-    <link rel="stylesheet" href="/assets/style/pages/contact/contact.css">
+
+    <!-- CSS links -->
+    <link rel="stylesheet" href="/assets/style/pages/festivalguide/festivalguide.css">
     <link rel="stylesheet" href="./assets/style/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.min.css" rel="stylesheet" />
-
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -71,115 +63,242 @@
             <section class="container">
                 <main class="otherhero-block-content container">
                     <!-- <h5>International Film</h5> -->
-                    <h4 class="text-center">Contact</h4>
+                    <h3 class="text-center">Film Guide And Ticket Booking</h3>
                 </main>
             </section>
         </div>
     </section>
-    <section class="contact container">
-        <div class="section-heading mb-4 container">
-            <h2>Frequently Asked Questions</h2>
-        </div>
-        <div class="row mt-5">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
-                <div class="card-section card">
-                    <div class="contact-card m-auto mb-5">
-                        <img class="m-auto" src="/assets/images/location-icon.svg" alt="">
+    <div class="container my-4">
+        <!-- Select input -->
+        <section class="festivalguide container">
+            <div class="section-heading mb-2 container">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="festivalguide-form">
+                <form action="">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                            <div class="form-outline w-100 d-flex flex-column gap-3">
+                                <label class="form-label">Email Address</label>
+                                <select class="form-select w-100 form-control-lg custom-select-dropdown custom-select-padding"
+                                    id="mySelect">
+                                    <option selected disabled>Choose your option</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                    <option value="6">Six</option>
+                                    <option value="7">Seven</option>
+                                    <option value="8">Eight</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                            <div class="form-outline w-100 d-flex flex-column gap-3">
+                                <label class="form-label">Film Sections</label>
+                                <select class="form-select w-100 form-control-lg custom-select-dropdown custom-select-padding"
+                                    id="mySelecttwo">
+                                    <option selected disabled>Choose your option</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                    <option value="6">Six</option>
+                                    <option value="7">Seven</option>
+                                    <option value="8">Eight</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                            <div class="form-outline w-100 d-flex flex-column gap-3">
+                                <label class="form-label">Genres</label>
+                                <select class="form-select w-100 form-control-lg custom-select-dropdown custom-select-padding"
+                                    id="mySelectthree">
+                                    <option selected disabled>Choose your option</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                    <option value="6">Six</option>
+                                    <option value="7">Seven</option>
+                                    <option value="8">Eight</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                            <div class="form-outline w-100 d-flex flex-column gap-3">
+                                <label class="form-label">Venues</label>
+                                <select class="form-select w-100 form-control-lg custom-select-dropdown custom-select-padding"
+                                    id="mySelectfive">
+                                    <option selected disabled>Choose your option</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                    <option value="6">Six</option>
+                                    <option value="7">Seven</option>
+                                    <option value="8">Eight</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                            <div class="form-outline w-100 d-flex flex-column gap-3">
+                                <label class="form-label">Datess</label>
+                                <select class="form-select w-100 form-control-lg custom-select-dropdown custom-select-padding"
+                                    id="mySelectsix">
+                                    <option selected disabled>Choose your option</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                    <option value="6">Six</option>
+                                    <option value="7">Seven</option>
+                                    <option value="8">Eight</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
+                            <div class="w-100 cus-search d-flex flex-column gap-3">
+                                <label class="form-label">Search Title Or Movie Code</label>
+                                <div class="input-group w-100">
+                                    <div class="w-100" data-mdb-input-init>
+                                      <input type="search" id="form1" class="form-control w-100" />
+                                    </div>
+                                    <button type="button" class="btn btn-primary search-btn" data-mdb-ripple-init>
+                                      <i class="fas fa-search"></i>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-content">
-                        <h4 class="text-center">National Film Development Corporation, 24, Pedder Rd, IT Colony,
-                            Cumballa Hill, Mumbai, Maharashtra 400026</h4>
+                </form>
+            </div>
+            <div class="festivalguide-movie">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="form-check checkbox-xl">
+                            <input class="form-check-input" type="checkbox" value="" id="checkbox-3" checked/>
+                            <label class="form-check-label" for="checkbox-3">Only With Available Tickets</label>
+                          </div>
+                          <button type="button" class="btn btn-warning btn-lg" data-mdb-ripple-init>Reset</button>
+                    </div>
+                </div>
+                <div class="festivalguide-movie-grid">
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="./assets/images/ticket.jpg" alt="">
+                        <div class="">
+                            <h2><a href="#">Anatomy Of A Fall</a></h2>
+                            <p><span> Section:</span>Festival Kaleidoscope</p>
+                            <p><span> Directed by:</span>Justine Triet</p>
+                            <p><span> Country of Origin:</span>France</p>
+                            <p><span> Runtime:</span> 150 min.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
-                <div class="card-section card">
-                    <div class="contact-card m-auto mb-5">
-                        <img class="m-auto" src="/assets/images/location-icon.svg" alt="">
-                    </div>
-                    <div class="contact-content">
-                        <h4 class="text-center">National Film Development Corporation, 24, Pedder Rd, IT Colony,
-                            Cumballa Hill, Mumbai, Maharashtra 400026</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-3">
-                <div class="card-section card">
-                    <div class="contact-card m-auto mb-5">
-                        <img class="m-auto" src="/assets/images/Email-icon.svg" alt="">
-                    </div>
-                    <div class="contact-content">
-                        <h4 class="text-center">National Film Development Corporation, 24, Pedder Rd, IT Colony,
-                            Cumballa Hill, Mumbai, Maharashtra 400026</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact-form">
-            <form action="">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
-                        <div class="form-outline" data-mdb-input-init>
-                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                            <label class="form-label" for="formControlLg">What Is This Regarding?<span
-                                    class="text-danger">*</span></label>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
-                        <div class="form-outline" data-mdb-input-init>
-                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                            <label class="form-label" for="formControlLg">Title<span
-                                    class="text-danger">*</span></label>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
-                        <div class="form-outline" data-mdb-input-init>
-                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                            <label class="form-label" for="formControlLg">First Name<span
-                                    class="text-danger">*</span></label>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
-                        <div class="form-outline" data-mdb-input-init>
-                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                            <label class="form-label" for="formControlLg">Last Name<span
-                                    class="text-danger">*</span></label>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
-                        <div class="form-outline" data-mdb-input-init>
-                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                            <label class="form-label" for="formControlLg">Email Address<span
-                                    class="text-danger">*</span></label>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
-                        <div class="form-outline" data-mdb-input-init>
-                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                            <label class="form-label" for="formControlLg">Contact<span
-                                    class="text-danger">*</span></label>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mb-4">
-                        <div class="form-outline" data-mdb-input-init>
-                            <input type="text" id="formControlLg" class="form-control form-control-lg" />
-                            <label class="form-label" for="formControlLg">Country<span
-                                    class="text-danger">*</span></label>
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 mb-4">
-                        <div class="form-outline" data-mdb-input-init>
-                            <textarea class="form-control" id="textAreaExample" rows="7"></textarea>
-                            <label class="form-label" for="textAreaExample">Message</label>
-                        </div>
-                    </div>
-                    <div class="col-12 mt-3">
-                        <div class="w-100 m-auto text-center"><button type="button" class="btn btn-primary btn-lg cus-contact-btn w-50" data-mdb-ripple-init>Submit</button></div>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
+
+        </section>
+    </div>
     <footer class="container-fluid">
         <div class="f-logo">
             <div>
@@ -253,13 +372,55 @@
             </div>
         </div>
     </footer>
-    <!-- jQuery -->
+
+    <!-- JavaScript links -->
+    <script src="./assets/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- MDB -->
+    <script type="text/javascript" src="/assets/style/~mdb-ui-kit/js/mdb.min.js"></script>
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+            $('#mySelect').select2({
+                minimumResultsForSearch: Infinity,
+                dropdownCssClass: 'cus-selectbox'
+            });
+        });
+        $(document).ready(function () {
+            $('#mySelecttwo').select2({
+                minimumResultsForSearch: Infinity,
+                dropdownCssClass: 'cus-selectbox'
+            });
+        });
+        $(document).ready(function () {
+            $('#mySelectthree').select2({
+                minimumResultsForSearch: Infinity,
+                dropdownCssClass: 'cus-selectbox'
+            });
+        });
+        $(document).ready(function () {
+            $('#mySelectfive').select2({
+                minimumResultsForSearch: Infinity,
+                dropdownCssClass: 'cus-selectbox'
+            });
+        });
+        $(document).ready(function () {
+            $('#mySelectsix').select2({
+                minimumResultsForSearch: Infinity,
+                dropdownCssClass: 'cus-selectbox'
+            });
+        });
+        $(document).ready(function () {
+            $('#mySelectseven').select2({
+                minimumResultsForSearch: Infinity,
+                dropdownCssClass: 'cus-selectbox'
+            });
+        });
+    
+    </script>
 </body>
 
 </html>

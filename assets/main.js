@@ -3,6 +3,11 @@ $(document).ready(function () {
     $('.dataTables_length').addClass('bs-select');
   });
   // Initialization for ES Users
-// import { Collapse, initMDB } from 'mdb-ui-kit';
+import { Collapse, initMDB } from 'mdb-ui-kit';
 
-// initMDB({ Collapse });
+initMDB({ Collapse });
+
+import { Input, initMDB } from 'mdb-ui-kit';
+initMDB({ Input });
+
+

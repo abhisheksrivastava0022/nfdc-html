@@ -1,0 +1,222 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '../../mixins';
+
+.festivalguide {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    &-form {
+        padding-top: 24px;
+
+        .custom-select-padding {
+            width: 100% !important;
+            /* Example of other styles you might want to apply */
+            padding: 10px;
+            /* Adjust padding as needed */
+            /* Optionally, you can add more styles */
+            border: 1px solid #000000 !important;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .custom-select-padding:focus {
+            border-color: blue;
+            /* Change border color to blue */
+            outline: none;
+            /* Remove default outline */
+            box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+            /* Optional: add a subtle shadow */
+        }
+
+        label {
+            font-size: 1.5rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .select2-results__option {
+            padding: 10px;
+            /* Adjust padding as needed */
+        }
+
+        .select2-container--default .select2-results__options {
+            max-height: 200px;
+            /* Set the max height as needed */
+            overflow-y: auto;
+            /* Enable scrolling if the content exceeds the max height */
+        }
+
+        span.select2-selection.select2-selection--single {
+            padding: 1.1rem !important;
+            height: auto;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 100% !important;
+            top: 0 !important;
+        }
+
+        .select2-container--default .select2-selection--single {
+            border: 1px solid #000000;
+
+            &:focus {
+                border: 1px solid blue;
+            }
+        }
+
+        /* Adjust the position of Select2 dropdown */
+        .select2-container--default.select2-dropdown--below {
+            display: none;
+            /* Hide the default dropdown */
+        }
+
+        .cus-selectbox {
+            .select2-results__options {
+                &::-webkit-scrollbar {
+                    width: 8px;
+                    /* Width of the scrollbar */
+                }
+            }
+        }
+
+        /* Style the Select2 dropdown scrollbar */
+        .select2-container--default .select2-results__options {
+            max-height: 200px;
+            /* Set max height for the dropdown */
+            overflow-y: auto;
+            /* Enable vertical scrolling */
+            position: relative;
+            /* Ensure scrollbar is inside the container */
+        }
+
+        .cus-select {
+            padding: 14px 16px !important;
+            font-size: 16px !important;
+        }
+
+        /* Adjust Select2 dropdown position to open upwards */
+        .select2-container--default.select2-dropdown--above .select2-dropdown {
+            margin-top: -250px;
+            /* Adjust the margin top as needed */
+        }
+
+        /* Ensure Select2 dropdown appears below the select input */
+        .select2-container--default .select2-dropdown {
+            margin-top: 0;
+            /* Reset any margin-top */
+            margin-bottom: 10px;
+            /* Optional: Adjust margin-bottom for spacing */
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            padding: auto !important;
+            font-size: 1.4rem;
+        }
+
+        .cus-search {
+            input {
+                padding: 1.1rem !important;
+                font-size: 1.4rem;
+                line-height: 28px;
+                border-color: #000000;
+            }
+        }
+
+        .guidetick .guidetick-form .form-outline .form-control.form-control-lg~.form-label {
+            padding-left: 6px;
+        }
+
+        .guidetick .guidetick-form .form-outline .form-control.form-control-lg~.form-label {
+            padding-top: 1.6rem;
+        }
+
+        .select2 .select2-container .select2-container--default {
+            width: 100%;
+        }
+
+        .select2-container {
+            width: 100% !important;
+        }
+
+        .select2 .select2-container .select2-container--default .select2-container--focus {
+            width: 100%;
+        }
+
+        .search-btn {
+            width: 50px;
+            font-size: 16px;
+        }
+    }
+
+    &-movie {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin-top: 24px;
+        .form-check{
+            .form-check-input {
+                width: 2rem;
+                height: 2rem;
+                &::before{
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+            .form-check-input[type=checkbox]:checked:after{
+                width: 0.8rem;
+                height: 1.325rem;
+                margin-left: .55rem;
+            }
+            .form-check-label{
+                font-size: 1.4rem;
+            }
+        } 
+        .btn-warning{
+            font-size: 1.4rem;
+        }
+        &-grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(calc(50% - 30px), auto));
+            grid-auto-rows: auto;
+            grid-gap: 30px;
+            
+            @include respond-to(xl){
+                grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+            }
+            .grid-item{
+                display: flex;
+                gap: 1.5rem;
+                @include respond-to(xl){
+                    flex-direction: column;
+                }
+                img{
+                    width: 30rem;
+                    height: 20rem;
+                    object-fit: fill;
+                    @include respond-to(xl){
+                        width: 100%;
+                    }
+                }
+                h2{
+                    font-weight: 600;
+                    a{
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-height: 5rem; /* Adjust the height based on your line height */
+                    }
+                }
+                p{
+                    font-size: 1.4rem;
+                    span{
+                        font-size: 1.6rem;
+                        font-weight: 500;
+                        margin-right: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
