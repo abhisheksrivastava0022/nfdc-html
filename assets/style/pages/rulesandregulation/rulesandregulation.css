@@ -1,0 +1,29 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '~mdb-ui-kit/css/mdb.min.css';
+.sora-thin {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.rulesandregulation {
+  padding: 4.8rem 0;
+}
+.rulesandregulation .rules-text h5 {
+  background: -webkit-linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.4rem;
+}
+.rulesandregulation p {
+  font-family: "sora", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 25px;
+  color: #1E1B1C;
+}
+.rulesandregulation ul {
+  font-size: 1.4rem;
+  line-height: 28px;
+}/*# sourceMappingURL=rulesandregulation.css.map */
