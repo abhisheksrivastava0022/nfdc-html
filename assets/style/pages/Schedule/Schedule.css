@@ -1,0 +1,123 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '~mdb-ui-kit/css/mdb.min.css';
+.sora-thin {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.Schedule {
+  padding: 4.8rem 0;
+}
+.Schedule-data {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 10px;
+  /* Optional: Adds some space between the columns */
+}
+@media (max-width: 768px) {
+  .Schedule-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.Schedule-data .column1 {
+  max-width: 120px;
+  background: -webkit-linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .Schedule-data .column1 {
+    max-width: 100%;
+  }
+}
+.Schedule-data .column2 {
+  background: linear-gradient(225deg, #3E4EB0 0%, #164E47 100%);
+  width: 100%;
+  padding: 1.5rem;
+  /* Just for visual distinction */
+}
+.Schedule-data .column2 .card-scedule {
+  position: relative;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+.Schedule-data .column2 .card-scedule h4 {
+  font-size: 2.4rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+}
+@media (max-width: 576px) {
+  .Schedule-data .column2 .card-scedule h4 {
+    font-size: 1.6rem;
+  }
+}
+.Schedule-data .column2 .card-scedule h3 {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+}
+@media (max-width: 576px) {
+  .Schedule-data .column2 .card-scedule h3 {
+    font-size: 1.4rem;
+  }
+}
+.Schedule-data .column2 .card-scedule::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-image: url(/assets/images/bg-card-contact.svg);
+  background-size: inherit;
+  background-position: bottom;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.Schedule-data .column2 .accordion-flush > .accordion-item > .accordion-header .accordion-button,
+.Schedule-data .column2 .accordion-flush > .accordion-item > .accordion-header .accordion-button.collapsed {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  background: -webkit-linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 576px) {
+  .Schedule-data .column2 .accordion-flush > .accordion-item > .accordion-header .accordion-button,
+  .Schedule-data .column2 .accordion-flush > .accordion-item > .accordion-header .accordion-button.collapsed {
+    font-size: 1.4rem;
+  }
+}
+.Schedule .nav-tabs {
+  width: 100%;
+  display: flex;
+  gap: 1.6rem;
+}
+.Schedule .nav-tabs .nav-tabs .nav-link.active {
+  color: red !important; /* Change 'red' to your desired color */
+}
+.Schedule .nav-tabs .nav-item {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .Schedule .nav-tabs .nav-item {
+    width: auto;
+  }
+}
+.Schedule .nav-tabs .nav-link {
+  padding: 1.4rem;
+  color: white;
+}
+@media (max-width: 576px) {
+  .Schedule .nav-tabs .nav-link {
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0.4rem 0.8rem;
+  }
+}/*# sourceMappingURL=Schedule.css.map */

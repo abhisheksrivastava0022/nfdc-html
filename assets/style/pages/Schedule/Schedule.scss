@@ -1,0 +1,127 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '../../mixins';
+
+.Schedule {
+    padding: 4.8rem 0;
+
+    &-data {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        gap: 10px;
+
+        @include respond-to(md) {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Optional: Adds some space between the columns */
+        .column1 {
+            max-width: 120px;
+            @include text-gdOne;
+
+            @include respond-to(md) {
+                max-width: 100%;
+            }
+        }
+
+        .column2 {
+            background: $gradientTwo;
+            width: 100%;
+            padding: 1.5rem;
+
+            /* Just for visual distinction */
+            .card-scedule {
+                position: relative;
+                z-index: 1;
+                position: relative;
+                overflow: hidden;
+
+                h4 {
+                    font-size: 2.4rem;
+                    font-family: "Sora", sans-serif;
+                    font-weight: 500;
+                    @include respond-to(sm) {
+                        font-size: 1.6rem;
+                    }
+
+                }
+
+                h3 {
+                    font-size: 1.6rem;
+                    font-family: "Sora", sans-serif;
+                    font-weight: 400;
+                    @include respond-to(sm) {
+                        font-size: 1.4rem;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    bottom: 0;
+                    background-image: url(/assets/images/bg-card-contact.svg);
+                    background-size: inherit;
+                    background-position: bottom;
+                    left: 0;
+                    top: 0;
+                    z-index: -1;
+                }
+            }
+
+            .accordion-flush>.accordion-item>.accordion-header .accordion-button,
+            .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed{
+                font-size: 1.6rem;
+                font-family: "Sora", sans-serif;
+                font-weight: 500;
+                @include text-gdOne;
+                @include respond-to(sm){
+                font-size: 1.4rem;
+                }
+            }
+        }
+
+    }
+
+    .nav-tabs {
+        width: 100%;
+        display: flex;
+        gap: 1.6rem;
+        .nav-tabs .nav-link.active {
+            color: red !important; /* Change 'red' to your desired color */}
+        .nav-item {
+            width: 100%;
+
+            @include respond-to(md) {
+                width: auto;
+            }
+        }
+
+        .nav-link {
+            padding: 1.4rem;
+            color: white;
+
+            // &:hover {
+            //     @include text-gdOne;
+            // }
+
+            @include respond-to(sm) {
+                font-size: 1.2rem;
+                font-weight: 400;
+                padding: 0.4rem 0.8rem;
+
+            }
+
+        }
+    }
+
+    // .nav-tabs .nav-link.active,
+    // .nav-tabs .nav-item.show .nav-link {
+    //     @include text-gdOne;
+    //     border-color: $gradientTwo;
+    // }
+
+
+}

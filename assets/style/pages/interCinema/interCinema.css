@@ -1,0 +1,87 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '~mdb-ui-kit/css/mdb.min.css';
+.sora-thin {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lubo {
+  padding: 48px 0;
+}
+.lubo .video-outer {
+  position: relative;
+}
+.lubo .video-outer .video-content-wrap {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  height: 350px;
+  width: 100%;
+}
+.lubo .video-outer .video-content-wrap img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-out 0s;
+}
+.lubo .video-outer .video-content-wrap:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(17, 17, 17, 0.431372549);
+  z-index: 0;
+}
+.lubo .film-details-text h2 {
+  font-size: 2.4rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.lubo .film-details-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin: 0;
+  padding: 1.2rem 0;
+  list-style: none;
+  font-size: 1.6rem;
+}
+.lubo .film-details-text ul b {
+  background: -webkit-linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.lubo .film-details-text ul .film-details-text ul li {
+  list-style-type: none;
+  font-family: "Sora", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.film-brief b {
+  font-size: 2.4rem;
+}
+.film-brief .film-brief-text {
+  margin-bottom: 0;
+}
+.film-brief .film-brief-text p {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+.film-brief hr {
+  border-top: 0;
+  margin: 30px 0;
+  padding: 0;
+}/*# sourceMappingURL=interCinema.css.map */

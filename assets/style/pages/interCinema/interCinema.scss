@@ -1,0 +1,96 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '../../mixins';
+
+.lubo {
+    padding: 48px 0;
+
+    .video-outer {
+        position: relative;
+
+        .video-content-wrap {
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+            height: 350px;
+            width: 100%;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: all .3s ease-out 0s;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: #1111116e;
+                z-index: 0;
+            }
+        }
+    }
+
+    .film-details-text {
+        h2 {
+            font-size: 2.4rem;
+            font-family: "Sora", sans-serif;
+            font-weight: 500;
+            letter-spacing: .2rem;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            margin: 0;
+            padding: 1.2rem 0;
+            list-style: none;
+            font-size: 1.6rem;
+
+            b {
+                @include text-gdOne;
+                font-size: 1.8rem;
+                text-transform: uppercase;
+            }
+
+            .film-details-text ul li {
+                list-style-type: none;
+                font-family: "Sora", sans-serif;
+                font-size: 1.8rem;
+                font-weight: 400;
+                line-height: 30px;
+                color: #fff;
+                text-transform: capitalize;
+
+            }
+        }
+    }
+}
+
+.film-brief {
+    b {
+        font-size: 2.4rem;
+    }
+
+    .film-brief-text {
+        margin-bottom: 0;
+
+        p {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            font-size: 1.4rem;
+
+        }
+    }
+
+    hr {
+        border-top: 0;
+        margin: 30px 0;
+        padding: 0;
+    }
+}
