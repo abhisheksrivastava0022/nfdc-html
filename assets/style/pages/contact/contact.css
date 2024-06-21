@@ -1,4 +1,5 @@
 @import '~mdb-ui-kit/css/mdb.min.css';
+@import '~mdb-ui-kit/css/mdb.min.css';
 .sora-thin {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
@@ -46,27 +47,33 @@
   z-index: -1;
   top: 0;
 }
-.contact .contact-form input {
-  padding: 1.5rem;
+.contact .contact-form .form-outline .form-control.form-control-lg {
+  font-size: 1.4rem;
   font-family: "Sora", sans-serif;
 }
-.contact .contact-form label {
+.contact .contact-form .form-outline {
+  position: relative;
+  /* Ensure relative positioning for child elements */
+  margin-bottom: 1.5rem;
+  /* Optional: Add margin for spacing */
+  font-family: "Sora", sans-serif;
+}
+.contact .contact-form .form-outline .form-label {
+  display: block;
+  /* Ensure the label is displayed as a block element */
+  white-space: normal;
+  /* Allow the label text to wrap */
+  word-wrap: break-word;
+  /* Ensure long words break if necessary */
+  overflow-wrap: break-word;
+  /* Handle overflow in case of long words */
   font-size: 14px;
+  /* Set the font size of the label */
+  padding-left: 4px;
+  top: -2.5px;
   font-family: "Sora", sans-serif;
 }
-.contact .contact-form .form-outline .form-control.form-control-lg ~ .form-label {
-  padding-top: 1.6rem;
-}
-.contact .contact-form .form-outline .form-control.form-control-lg ~ .form-label {
-  padding-left: 6px;
-}
-.contact .form-outline .form-control.form-control-lg:focus ~ .form-label {
-  transform: translateY(-1.25rem) translateY(-0.9rem) scale(0.8);
-}
-.contact .cus-contact-btn {
-  padding: 12px 24px;
-  background: linear-gradient(44.43deg, #3E4EB0 -20.27%, #164E47 105%);
-}
-.contact .cus-contact-btn:hover {
-  background: linear-gradient(225deg, #3E4EB0 0%, #164E47 100%);
+.contact .contact-form textarea {
+  font-size: 1.4rem;
+  font-family: "Sora", sans-serif;
 }/*# sourceMappingURL=contact.css.map */
